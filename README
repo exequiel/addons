@@ -1,7 +1,7 @@
 
 -----------------------------------------------------------
-| Arbol actual de directorios                             |
-|                                                         |
+| Arbol actual de directorios y relacion con paths        |
+| definifitivos (elastix-addons.4.0.0-6)                  |
 -----------------------------------------------------------
 
 
@@ -13,7 +13,7 @@
     │   ├── pki
     │   │   └── rpm-gpg
     │   └── yum.repos.d
-    ├── html
+    ├── html (/var/www/html/)
     │   └── modules
     │       └── addons_availables
     │           ├── configs
@@ -25,7 +25,7 @@
     │               └── default
     │                   ├── css
     │                   └── js
-    ├── setup
+    ├── setup (/usr/share/elastix/module_installer/elastix-addons-4.0.0-6/setup/)
     │   └── db
     │       ├── delete
     │       ├── install
@@ -33,7 +33,7 @@
     │       └── update
     │           └── addons
     │               └── version_sql
-    └── updater
+    └── updater (/opt/elastix/elastix-updater/)
 
 28 directories
 
