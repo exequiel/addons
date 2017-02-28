@@ -1,0 +1,88 @@
+-----------------------------------------------------------
+| Diferencias entre sources originales y esquema presente |
+|     Original --> Nuevo                                  |
+-----------------------------------------------------------
+
+addons/modules/                           --> sources/html/addons/
+setup/db/                                 --> sources/setup/db/
+setup/etc/                                --> sources/etc/
+setup/elastix-moduleconf/elastix-updaterd -->  sources/etc/init.d/elastix-updaterd
+setup/elastix-moduleconf/                 --> sources/updater
+
+
+
+-----------------------------------------------------------
+| Archivos en el RPM "elastix-addons"                     |
+-----------------------------------------------------------
+
+
+[root@issabel ~]# repoquery --list elastix-addons
+Failed to set locale, defaulting to C
+/etc/init.d/elastix-updaterd
+/etc/pki/rpm-gpg/RPM-GPG-KEY-PGDG-91
+/etc/yum.repos.d/commercial-addons.repo
+/etc/yum.repos.d/pgdg-91-centos.repo
+/opt/elastix/elastix-updater
+/opt/elastix/elastix-updater/AbstractProcess.class.php
+/opt/elastix/elastix-updater/AppLogger.class.php
+/opt/elastix/elastix-updater/ElastixInstallerProcess.class.php
+/opt/elastix/elastix-updater/Explicaci?n protocolo demonio ayudante.txt
+/opt/elastix/elastix-updater/elxupdaterd
+/opt/elastix/elastix-updater/elxupdaterd.conf
+/usr/share/elastix/module_installer/elastix-addons-4.0.0-6
+/usr/share/elastix/module_installer/elastix-addons-4.0.0-6/menu.xml
+/usr/share/elastix/module_installer/elastix-addons-4.0.0-6/setup
+/usr/share/elastix/module_installer/elastix-addons-4.0.0-6/setup/db
+/usr/share/elastix/module_installer/elastix-addons-4.0.0-6/setup/db/db.info
+/usr/share/elastix/module_installer/elastix-addons-4.0.0-6/setup/db/delete
+/usr/share/elastix/module_installer/elastix-addons-4.0.0-6/setup/db/install
+/usr/share/elastix/module_installer/elastix-addons-4.0.0-6/setup/db/install/addons
+/usr/share/elastix/module_installer/elastix-addons-4.0.0-6/setup/db/install/addons/1_schema.sql
+/usr/share/elastix/module_installer/elastix-addons-4.0.0-6/setup/db/update
+/usr/share/elastix/module_installer/elastix-addons-4.0.0-6/setup/db/update/addons
+/usr/share/elastix/module_installer/elastix-addons-4.0.0-6/setup/db/update/addons/version_sql
+/usr/share/elastix/module_installer/elastix-addons-4.0.0-6/setup/db/update/addons/version_sql/1_2.0.0-1_2.0.0-8.sql
+/usr/share/elastix/module_installer/elastix-addons-4.0.0-6/setup/db/update/addons/version_sql/2_2.0.0-8_2.0.0-13.sql
+/usr/share/elastix/module_installer/elastix-addons-4.0.0-6/setup/db/update/addons/version_sql/3_2.0.0-13_2.2.0-2.sql
+/usr/share/elastix/module_installer/elastix-addons-4.0.0-6/setup/installer.php
+/var/www/html/modules
+/var/www/html/modules/addons_availables
+/var/www/html/modules/addons_availables/configs
+/var/www/html/modules/addons_availables/configs/default.conf.php
+/var/www/html/modules/addons_availables/help
+/var/www/html/modules/addons_availables/help/en.hlp
+/var/www/html/modules/addons_availables/help/es.hlp
+/var/www/html/modules/addons_availables/images
+/var/www/html/modules/addons_availables/images/addons.png
+/var/www/html/modules/addons_availables/images/addons_header_row_bg.png
+/var/www/html/modules/addons_availables/images/addons_icon_buy.png
+/var/www/html/modules/addons_availables/images/addons_icon_install.png
+/var/www/html/modules/addons_availables/images/addons_icon_uninstall.png
+/var/www/html/modules/addons_availables/images/addons_icon_update.png
+/var/www/html/modules/addons_availables/images/addons_row_button_bg.png
+/var/www/html/modules/addons_availables/images/bookmarks_equis.png
+/var/www/html/modules/addons_availables/images/es_hlp_addons1.png
+/var/www/html/modules/addons_availables/images/es_hlp_registration.png
+/var/www/html/modules/addons_availables/images/hlp_addons1.png
+/var/www/html/modules/addons_availables/images/hlp_registration.png
+/var/www/html/modules/addons_availables/images/modalbox_bg.png
+/var/www/html/modules/addons_availables/images/module_icon_addons.png
+/var/www/html/modules/addons_availables/images/searchw.png
+/var/www/html/modules/addons_availables/images/table-arrow-first.gif
+/var/www/html/modules/addons_availables/images/table-arrow-last.gif
+/var/www/html/modules/addons_availables/images/table-arrow-next.gif
+/var/www/html/modules/addons_availables/images/table-arrow-previous.gif
+/var/www/html/modules/addons_availables/index.php
+/var/www/html/modules/addons_availables/lang
+/var/www/html/modules/addons_availables/lang/en.lang
+/var/www/html/modules/addons_availables/lang/es.lang
+/var/www/html/modules/addons_availables/libs
+/var/www/html/modules/addons_availables/libs/paloSantoAddons.class.php
+/var/www/html/modules/addons_availables/themes
+/var/www/html/modules/addons_availables/themes/default
+/var/www/html/modules/addons_availables/themes/default/css
+/var/www/html/modules/addons_availables/themes/default/css/addons.css
+/var/www/html/modules/addons_availables/themes/default/js
+/var/www/html/modules/addons_availables/themes/default/js/javascript.js
+/var/www/html/modules/addons_availables/themes/default/reporte_addons.tpl
+/var/www/html/modules/addons_availables/themes/default/reporte_addons_lista.tpl
