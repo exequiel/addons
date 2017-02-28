@@ -1,3 +1,44 @@
+
+-----------------------------------------------------------
+| Arbol actual de directorios                             |
+|                                                         |
+-----------------------------------------------------------
+
+
+./
+├── additionals
+└── sources
+    ├── etc
+    │   ├── init.d
+    │   ├── pki
+    │   │   └── rpm-gpg
+    │   └── yum.repos.d
+    ├── html
+    │   └── modules
+    │       └── addons_availables
+    │           ├── configs
+    │           ├── help
+    │           ├── images
+    │           ├── lang
+    │           ├── libs
+    │           └── themes
+    │               └── default
+    │                   ├── css
+    │                   └── js
+    ├── setup
+    │   └── db
+    │       ├── delete
+    │       ├── install
+    │       │   └── addons
+    │       └── update
+    │           └── addons
+    │               └── version_sql
+    └── updater
+
+28 directories
+
+
+
 -----------------------------------------------------------
 | Diferencias entre sources originales y esquema presente |
 |     Original --> Nuevo                                  |
@@ -6,7 +47,7 @@
 addons/modules/                           --> sources/html/addons/
 setup/db/                                 --> sources/setup/db/
 setup/etc/                                --> sources/etc/
-setup/elastix-moduleconf/elastix-updaterd -->  sources/etc/init.d/elastix-updaterd
+setup/elastix-moduleconf/elastix-updaterd --> sources/etc/init.d/elastix-updaterd
 setup/elastix-moduleconf/                 --> sources/updater
 
 
